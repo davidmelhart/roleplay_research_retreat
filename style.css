@@ -70,6 +70,7 @@ strong {
     background-position-y: bottom;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
+    position: relative;
 }
 
 .logo {
@@ -81,6 +82,20 @@ strong {
     margin-bottom: 50px;
     box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
     border-radius: 50%;
+    position: relative;
+    z-index: 999;
+}
+
+.sponsor {
+    background: url(img/Logo_MO.png) no-repeat, rgb(254 231 213 / 50%) no-repeat;
+    background-size: 80%;
+    background-position: 50%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 20px;
 }
 
 .title {
