@@ -1,0 +1,163 @@
+* {
+/*	outline: 1px dotted red;*/
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+body {
+	color: white;
+	background: url("img/bg-min.png") repeat #06151e;
+	background-size: 350px;
+	background-position-y: top;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-family: 'Kanit', sans-serif;
+    border-bottom: 3px solid #194a67;
+    color: #daf1f9;
+    background: #0f1e27;
+}
+
+h2, h3, h4, h5, h6 {
+	font-family: 'Kanit', sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #5999bf;
+}
+
+a {
+	color: #d7735f;
+}
+
+a:hover {
+  color: #ab442f; 
+}
+
+span {
+	white-space: nowrap;
+}
+
+strong {
+	color: #daf1f9;
+}
+
+.container {
+	max-width: 1200px;
+}
+
+.container>.border {
+	border: 5px solid white;
+    border-radius: 20px;
+    margin: 40px auto;
+    background: #06151e;
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.5);
+}
+
+.container>.border>.border-inner{
+    border: 5px solid #194a67;
+    margin: 3px;
+    box-shadow: 0 0 0 3px #d7735f;
+    border-radius: 9px;
+    padding-bottom: 40px;
+}
+
+.header {
+    padding-top: 50px;
+    padding-bottom: 0;
+    background: url(img/obidos.jpg) no-repeat, linear-gradient(90deg, rgba(254,231,213,1) 0%, #f9dfd2 25%, rgb(250 222 208) 50%, rgba(254,231,213,1) 100%);
+    background-size: 100%;
+    background-position-y: bottom;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.logo {
+	background: url(img/RRR.png) no-repeat, white;
+    background-size: 100%;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    margin-bottom: 50px;
+    box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+    border-radius: 50%;
+}
+
+.title {
+	background: #06151e;
+    border-top: 3px solid #194a67;
+}
+
+.header h1, .header h2 {
+	text-align: center;
+	margin: 0;
+	padding: 1rem;
+}
+
+.header h2 {
+	font-size: 2em;
+}
+
+section.content{
+	margin: 0 2em;
+}
+
+.navbar {
+	border-top: 3px solid #194a67;
+    border-bottom: 3px solid #194a67;
+    margin-bottom: 40px;
+}
+
+.navbar ul {
+	background: #0f1e27;
+	list-style: none;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 0 1em;
+	margin: 0;
+}
+
+
+.navbar li {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1.2em;
+	padding: 0;
+	margin: 0;
+	white-space: nowrap;
+}
+
+.navbar li a {
+	text-decoration: none;
+	padding: 0.25em 1em;
+	transition: 0.3s all;
+}
+
+.navbar li a:hover {
+	background: #194a67;
+    color: #daf1f9;
+}
+
+@media (max-width: 999px) {
+	.navbar ul {
+		flex-direction: column;
+		padding: 0;
+	}
+	.navbal li {
+		width: 100%;
+	}
+	.navbar a {
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+}
+
+@media (max-width: 520px) {
+	.logo {
+		width: 100px;
+		height: 100px;		
+	}
+}
