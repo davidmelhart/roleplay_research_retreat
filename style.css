@@ -62,6 +62,21 @@ strong {
     padding-bottom: 40px;
 }
 
+.image-link {
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    width: 50%;
+    position: relative;
+    padding: 0px;
+    margin: 0;
+    border: 3px solid #d7735f;
+}
+
+.image-link img {
+	width: 100%;
+}
+
 .header {
     padding-top: 50px;
     padding-bottom: 0;
@@ -86,16 +101,34 @@ strong {
     z-index: 999;
 }
 
-.sponsor {
-    background: url(img/Logo_MO.png) no-repeat, rgb(254 231 213 / 50%) no-repeat;
-    background-size: 80%;
-    background-position: 50%;
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    top: 10px;
-    right: 10px;
+.sponsors {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+    top: 0px;
+    right: 0px;
+    align-items: flex-end;
+}
+
+.sponsors a {
+    background: rgb(254 231 213 / 50%);
     border-radius: 20px;
+    display: flex;
+    padding: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+
+}
+
+.sponsors-body {
+	display: flex; 
+	flex-wrap: wrap; 
+	justify-content: flex-start; 
+	align-items: center;
+}
+
+.sponsors-body a {
+	margin: 0px 30px 10px;
 }
 
 .title {
@@ -153,6 +186,12 @@ section.content{
 .navbar li a:hover {
 	background: #194a67;
     color: #daf1f9;
+}
+
+@media (max-width: 1200px) {
+	.container {
+		width: 90%;
+	}
 }
 
 @media (max-width: 999px) {
