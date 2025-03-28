@@ -6,7 +6,7 @@
 
 body {
 	color: white;
-	background: url("img/bg-min.png") repeat #06151e;
+	background: url("img/bg-min.png") repeat #1c1107;
 	background-size: 350px;
 	background-position-y: top;
 }
@@ -14,20 +14,20 @@ body {
 h1 {
     text-transform: uppercase;
     font-family: 'Kanit', sans-serif;
-    border-bottom: 3px solid #194a67;
-    color: #daf1f9;
-    background: #0f1e27;
+    border-bottom: 3px solid #594433;
+    color: #e4cbac;
+    background: #342418;
 }
 
 h2, h3, h4, h5, h6 {
 	font-family: 'Kanit', sans-serif;
 	text-transform: uppercase;
 	font-weight: bold;
-	color: #5999bf;
+	color: #e4cbac;
 }
 
 a {
-	color: #d7735f;
+	color: #8eba5f;
 }
 
 a:hover {
@@ -39,7 +39,7 @@ span {
 }
 
 strong {
-	color: #daf1f9;
+	color: #e4cbac;
 }
 
 .container {
@@ -50,46 +50,42 @@ strong {
 	border: 5px solid white;
     border-radius: 20px;
     margin: 40px auto;
-    background: #06151e;
+    background: #1c1107;
     box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.5);
 }
 
 .container>.border>.border-inner{
-    border: 5px solid #194a67;
+    border: 5px solid #594433;
     margin: 3px;
-    box-shadow: 0 0 0 3px #d7735f;
+    box-shadow: 0 0 0 3px #8eba5f;
     border-radius: 9px;
     padding-bottom: 40px;
 }
 
-.image-link {
-    border-radius: 20px;
-    overflow: hidden;
-    display: flex;
-    width: 50%;
-    position: relative;
-    padding: 0px;
-    margin: 0;
-    border: 3px solid #d7735f;
-}
-
-.image-link img {
-	width: 100%;
-}
-
 .header {
-    padding-top: 50px;
     padding-bottom: 0;
-    background: url(img/obidos.jpg) no-repeat, linear-gradient(90deg, rgba(254,231,213,1) 0%, #f9dfd2 25%, rgb(250 222 208) 50%, rgba(254,231,213,1) 100%);
+    background: url(img/leiria.jpg) no-repeat, linear-gradient(90deg, rgba(254,231,213,1) 0%, #f9dfd2 25%, rgb(250 222 208) 50%, rgba(254,231,213,1) 100%);
     background-size: 100%;
-    background-position-y: bottom;
+    background-position-y: center;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
-    position: relative;
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
 }
 
 .logo {
 	background: url(img/RRR.png) no-repeat, white;
+    background-size: 100%;
+    width: 180px;
+    height: 180px;
+    margin: auto;
+    box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+    border-radius: 50%;
+}
+
+.sponsor {
+	background: url(img/[...].png) no-repeat, white;
     background-size: 100%;
     width: 300px;
     height: 300px;
@@ -97,43 +93,11 @@ strong {
     margin-bottom: 50px;
     box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
     border-radius: 50%;
-    position: relative;
-    z-index: 999;
-}
-
-.sponsors {
-	display: flex;
-	flex-direction: column;
-	position: absolute;
-    top: 0px;
-    right: 0px;
-    align-items: flex-end;
-}
-
-.sponsors a {
-    background: rgb(254 231 213 / 50%);
-    border-radius: 20px;
-    display: flex;
-    padding: 10px;
-    margin-top: 10px;
-    margin-right: 10px;
-
-}
-
-.sponsors-body {
-	display: flex; 
-	flex-wrap: wrap; 
-	justify-content: flex-start; 
-	align-items: center;
-}
-
-.sponsors-body a {
-	margin: 0px 30px 10px;
 }
 
 .title {
-	background: #06151e;
-    border-top: 3px solid #194a67;
+	background: #1c1107;
+    border-top: 3px solid #594433;
 }
 
 .header h1, .header h2 {
@@ -151,13 +115,13 @@ section.content{
 }
 
 .navbar {
-	border-top: 3px solid #194a67;
-    border-bottom: 3px solid #194a67;
+	border-top: 3px solid #594433;
+    border-bottom: 3px solid #594433;
     margin-bottom: 40px;
 }
 
 .navbar ul {
-	background: #0f1e27;
+	background: #342418;
 	list-style: none;
 	width: 100%;
 	display: flex;
@@ -184,14 +148,23 @@ section.content{
 }
 
 .navbar li a:hover {
-	background: #194a67;
-    color: #daf1f9;
+	background: #594433;
+    color: #e4cbac;
 }
 
-@media (max-width: 1200px) {
-	.container {
-		width: 90%;
-	}
+.image-link {
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    width: 50%;
+    position: relative;
+    padding: 0px;
+    margin: 0;
+    border: 3px solid #8eba5f;
+}
+
+.image-link img {
+	width: 100%;
 }
 
 @media (max-width: 999px) {
@@ -206,6 +179,9 @@ section.content{
 		display: block;
 		width: 100%;
 		text-align: center;
+	}
+	.header {
+		background-position-y: top;
 	}
 }
 
