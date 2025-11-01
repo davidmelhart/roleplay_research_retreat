@@ -1,3 +1,12 @@
+:root {
+  --bg-color: #1c1107;
+  --menu-bg-color: #342418;
+  --border: #594433;
+  --header-text-color: #e4cbac;
+  --link-color: #8eba5f;
+  --link-hover: #ab442f;
+}
+
 * {
 /*	outline: 1px dotted red;*/
 	box-sizing: border-box;
@@ -6,7 +15,7 @@
 
 body {
 	color: white;
-	background: url("img/bg-min.png") repeat #1c1107;
+	background: url("img/bg-min.png") repeat var(--bg-color);
 	background-size: 350px;
 	background-position-y: top;
 }
@@ -14,24 +23,24 @@ body {
 h1 {
     text-transform: uppercase;
     font-family: 'Kanit', sans-serif;
-    border-bottom: 3px solid #594433;
-    color: #e4cbac;
-    background: #342418;
+    border-bottom: 3px solid var(--border);
+    color: var(--header-text-color);
+    background: var(--menu-bg-color);
 }
 
 h2, h3, h4, h5, h6 {
 	font-family: 'Kanit', sans-serif;
 	text-transform: uppercase;
 	font-weight: bold;
-	color: #e4cbac;
+	color: var(--header-text-color);
 }
 
 a {
-	color: #8eba5f;
+	color: var(--link-color);
 }
 
 a:hover {
-  color: #ab442f; 
+  color: var(--link-hover); 
 }
 
 span {
@@ -39,7 +48,7 @@ span {
 }
 
 strong {
-	color: #e4cbac;
+	color: var(--header-text-color);
 }
 
 .container {
@@ -50,14 +59,14 @@ strong {
 	border: 5px solid white;
     border-radius: 20px;
     margin: 40px auto;
-    background: #1c1107;
+    background: var(--bg-color);
     box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.5);
 }
 
 .container>.border>.border-inner{
-    border: 5px solid #594433;
+    border: 5px solid var(--border);
     margin: 3px;
-    box-shadow: 0 0 0 3px #8eba5f;
+    box-shadow: 0 0 0 3px var(--link-color);
     border-radius: 9px;
     padding-bottom: 40px;
 }
@@ -96,8 +105,8 @@ strong {
 }
 
 .title {
-	background: #1c1107;
-    border-top: 3px solid #594433;
+	background: var(--bg-color);
+    border-top: 3px solid var(--border);
 }
 
 .header h1, .header h2 {
@@ -115,13 +124,13 @@ section.content{
 }
 
 .navbar {
-	border-top: 3px solid #594433;
-    border-bottom: 3px solid #594433;
+	border-top: 3px solid var(--border);
+    border-bottom: 3px solid var(--border);
     margin-bottom: 40px;
 }
 
 .navbar ul {
-	background: #342418;
+	background: var(--menu-bg-color);
 	list-style: none;
 	width: 100%;
 	display: flex;
@@ -148,8 +157,8 @@ section.content{
 }
 
 .navbar li a:hover {
-	background: #594433;
-    color: #e4cbac;
+	background: var(--border);
+    color: var(--header-text-color);
 }
 
 .image-link {
@@ -160,7 +169,7 @@ section.content{
     position: relative;
     padding: 0px;
     margin: 0;
-    border: 3px solid #8eba5f;
+    border: 3px solid var(--link-color);
 }
 
 .image-link img {
