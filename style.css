@@ -78,7 +78,7 @@ strong {
 
 .header {
     padding-bottom: 0;
-    background: url(img/ponteverda.jpg) no-repeat, linear-gradient(90deg, rgba(254,231,213,1) 0%, #f9dfd2 25%, rgb(250 222 208) 50%, rgba(254,231,213,1) 100%);
+    background: url(img/ponteverda.jpg) no-repeat, var(--bg-color);
     background-size: 100%;
     background-position-y: center;
     border-top-left-radius: 4px;
